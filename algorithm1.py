@@ -1,13 +1,4 @@
-"""
-Mini Project: Empirical Analysis of Insertion Sort
-Course: Algorithms - Analysis and Design
 
-What this script does:
-1) Implements insertion sort (counting comparisons and shifts).
-2) Times it for n = 100 ... 5000 on 3 input types: sorted, reverse-sorted, random.
-3) Compares it with merge sort.
-4) Saves results to results.csv and plots to PNG files.
-"""
 
 import csv
 import random

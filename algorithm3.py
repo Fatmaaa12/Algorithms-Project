@@ -1,24 +1,4 @@
- """
-Mini Project: Meeting Rooms (Min-Heap of end times)
-Course: CS314 - Heap Sort / Heaps
 
-Problem: given a list of meetings (start, end), find the MINIMUM number of rooms
-needed so that no two overlapping meetings share a room.
-(A meeting that ends at 10 and another that starts at 10 can use the same room.)
-
-Idea: sort meetings by start time. Keep a MIN-HEAP of (end_time, room_id) for the
-rooms that are busy. For each new meeting:
-    - if the room that frees up EARLIEST (heap top) is free by now -> reuse it
-    - otherwise open a new room
-The number of rooms ever opened is the answer.
-
-We build our own MinHeap class (to show how a heap works) and compare:
-  1) Brute force          O(n^2)
-  2) Min-heap solution    O(n log n)
-
-Run:  pip install matplotlib   then   python meeting_rooms.py
-Output: results.csv, plot_schedule.png, plot_runtime.png
-"""
 
 import csv
 import heapq
